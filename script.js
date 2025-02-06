@@ -1,4 +1,3 @@
-// Smooth Scroll for Navbar Links
 document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -8,7 +7,6 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   });
 });
 
-// Scroll Progress Indicator
 window.addEventListener('scroll', () => {
   const scrollProgress = document.getElementById('progress-bar');
   const totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -16,7 +14,6 @@ window.addEventListener('scroll', () => {
   scrollProgress.style.width = `${progress}%`;
 });
 
-// Typing Effect
 const typingEffect = document.querySelector('.typing-effect');
 const text = typingEffect.textContent;
 typingEffect.textContent = '';
@@ -32,7 +29,6 @@ const type = () => {
 
 type();
 
-// Navbar Interaction on Scroll
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('nav');
   if (window.scrollY > 50) {
@@ -42,8 +38,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-/* filepath: /e:/Portfolio/script.js */
-// Mobile Navigation Toggle
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -52,7 +46,6 @@ navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
-// Close menu when clicking a link
 document.querySelectorAll('.nav-menu a').forEach(link => {
   link.addEventListener('click', () => {
     navToggle.classList.remove('active');
