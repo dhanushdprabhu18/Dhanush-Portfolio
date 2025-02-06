@@ -1,4 +1,3 @@
-/* General reset */
 * {
   margin: 0;
   padding: 0;
@@ -108,7 +107,6 @@ section {
   transition: all 0.3s ease;
 }
 
-/* Home Section */
 #home {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   color: white;
@@ -132,7 +130,6 @@ section {
   animation: fadeInUp 1s ease-in-out;
 }
 
-/* About Section */
 #about {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
@@ -154,7 +151,6 @@ section {
   font-size: 1.2em;
 }
 
-/* Education Section */
 #education {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
@@ -225,7 +221,6 @@ section {
   margin-bottom: 10px;
 }
 
-/* Skills Section */
 #skills {
   background-color: #0078d4;
   color: white;
@@ -252,7 +247,6 @@ progress {
   transition: width 2s ease-in-out;
 }
 
-/* Upcoming Projects Section */
 #upcoming-projects {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
@@ -269,63 +263,27 @@ progress {
   margin-bottom: 20px;
 }
 
-/* Contact Section */
-#contact {
-  background-color: #fff;
-  color: #333;
-  transition: background-color 0.3s ease-in-out;
-  margin: 50px 0;
-}
+.social-links{
+  align-items: center;
+ }
 
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-form input:focus, form textarea:focus {
-  border-color: #0078d4;
-  box-shadow: 0 0 5px rgba(0, 120, 212, 0.5);
-}
-
-form button {
-  background-color: #0078d4;
+.social-links h3{
+  text-align: center;
+  font-family:'Montserrat', sans-serif;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
-form button:hover {
-  background-color: #005fa3;
-  transform: scale(1.05);
-}
-
 .social-links a {
-  margin: 0 10px;
+  align-items: center;
+  color: black;
   font-size: 1.5em;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
   transform: scale(1.2);
-  color: #0078d4;
+  color: #101111;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* Keyframe Animations */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -382,7 +340,6 @@ footer {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
