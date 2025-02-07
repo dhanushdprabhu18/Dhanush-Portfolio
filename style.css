@@ -222,8 +222,8 @@ section {
 }
 
 #skills {
-  background-color: #0078d4;
-  color: white;
+  background-color: #FFFFF;
+  color: #00800;
   transition: background-color 0.3s ease-in-out;
   margin: 50px 0;
 }
