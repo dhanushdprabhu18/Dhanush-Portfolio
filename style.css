@@ -247,6 +247,21 @@ progress {
   transition: width 2s ease-in-out;
 }
 
+.progress-bar {
+  width: 300px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px; /* Rounds the corners */
+  overflow: hidden;
+}
+
+.progress {
+  width: 50%; 
+  height: 100%;
+  background-color: #4caf50; 
+  border-radius: 10px;
+}
+
 #upcoming-projects {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
