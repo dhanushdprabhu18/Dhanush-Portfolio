@@ -3,29 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhanush D Prabhu - BCA Student & Web Developer</title>
+  <title>Dhanush D Prabhu | Creative Developer</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
-  <meta name="description" content="BCA student specializing in front-end development, UI/UX design, and cloud technologies. Passionate about crafting seamless digital experiences.">
-  <meta property="og:title" content="Dhanush D Prabhu - Portfolio">
-  <meta property="og:description" content="BCA student specializing in front-end development, UI/UX design, and cloud technologies.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="BCA student specializing in front-end development, UI/UX design, and cloud technologies. Creating beautiful, functional digital experiences.">
+  <meta property="og:title" content="Dhanush D Prabhu | Portfolio">
+  <meta property="og:description" content="Creative developer portfolio showcasing projects in web development and design.">
   <meta property="og:image" content="profileimage.jpeg">
-  <meta property="og:url" content="https://myportfolio.com">
+  <meta property="og:url" content="https://dhanushdprabhu.vercel.app">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.png" type="image/png">
 </head>
 <body>
+  <div class="decorative-circle circle-1"></div>
+  <div class="decorative-circle circle-2"></div>
+  <div class="decorative-circle circle-3"></div>
+
   <header>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <nav>
       <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#upcoming-projects">Upcoming Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#upcoming-projects" class="nav-link">Upcoming</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -33,88 +42,239 @@
   <div id="progress-bar"></div>
 
   <main>
-    <section id="home">
-      <div id="particles-js"></div>
+    <section id="home" class="full-height">
       <div class="home-content">
-        <h1 class="typing-effect">Hey, I'm Dhanush D Prabhu</h1>
-        <p class="animated-text">A passionate BCA student specializing in AI/ML, front-end development, and cloud technologies. Currently expanding my expertise in AI/ML, data analysis, and cloud infrastructure while building impactful projects.</p>
+        <h1 class="typing-effect">Hey, I'm <span class="highlight">Dhanush D Prabhu</span></h1>
+        <p class="animated-text">BCA student passionate about creating beautiful, functional digital experiences through front-end development, UI/UX design, and cloud technologies.</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
       </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </section>
 
-    <section id="about" class="section about">
-      <h2><u>About Me</u></h2>
-      <p>I am a motivated and detail-oriented BCA student with a strong focus on front-end development and UI/UX design. My expertise includes AI/ML, data science, front-end development, and cloud infrastructure, with a strong focus on implementing intelligent solutions. I am driven to build innovative solutions that provide impactful user experiences.</p>
-    </section>
-
-    <section id="education" class="section education">
-      <h2>Education</h2>
-      <p>PUC in PCMCs from Vikasa Pre University, Shimoga.</p>
-      <p>Bachelor of Computer Applications at PES Institute of Advanced Management Studies, Shimoga.</p>
-    </section>
-
-    <section id="projects">
-      <h2>My Projects</h2>     
-      <div class="projects-container">
-        <div class="project-card">
-          <img src="/Screenshot (28).png" alt="Weather Forecast App Screenshot">
-          <div class="card-info">
-            <h3>Weather Forecast App - Real-Time Weather Updates</h3>
-            <a href="https://weatherdheeko.vercel.app/" target="_blank"><p>View Project</p></a>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>As a passionate and driven Bachelor of Computer Applications (BCA) student, I am dedicated to blending creativity with technical expertise to craft innovative solutions.</p>
+            <p>Currently, I am deepening my skills in CSS and exploring full-stack development to expand my ability to build dynamic, user-centered applications.</p>
+            <div class="personal-info">
+              <div class="info-item">
+                <span class="info-label">From:</span>
+                <span class="info-value">Shimoga, Karnataka</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Interests:</span>
+                <span class="info-value">Web Dev, UI/UX, Cloud Tech</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="project-card">
-          <img src="/Screenshot (31).png" alt="Tic-Tac-Toe Screenshot">
-          <div class="card-info">
-            <h3>Tic-Tac-Toe Game - Interactive Game Built with JavaScript</h3>
-            <a href="https://gridbattle.vercel.app/" target="_blank"><p>View Project</p></a>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2022 - Present</div>
+            <div class="timeline-content">
+              <h3>Bachelor of Computer Applications</h3>
+              <p>PES Institute of Advanced Management Studies, Shimoga</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2022</div>
+            <div class="timeline-content">
+              <h3>Pre-University (PCMCs)</h3>
+              <p>Vikasa Pre University College</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skill">
-          <label for="html">HTML</label>
-          <progress id="html" value="85" max="100"></progress>
-        </div>
-        <div class="skill">
-          <label for="css">CSS</label>
-          <progress id="css" value="80" max="100"></progress>
-        </div>
-        <div class="skill">
-          <label for="js">JavaScript</label>
-          <progress id="js" value="70" max="100"></progress>
-        </div>
-        <div class="skill">
-          <label for="figma">Figma</label>
-          <progress id="figma" value="75" max="100"></progress>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="/Screenshot (28).png" alt="Weather Forecast App Interface" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3>Weather Forecast App</h3>
+              <p>A responsive weather application that displays current conditions and forecasts using API data.</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://weatherdheeko.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" class="btn btn-secondary">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="/Screenshot (31).png" alt="Tic-Tac-Toe Game Interface" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3>Tic-Tac-Toe Game</h3>
+              <p>Interactive browser game with score tracking and responsive design.</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://gridbattle.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" class="btn btn-secondary">Case Study</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="upcoming-projects">
-      <h2>Upcoming Projects</h2>
-      <div class="upcoming-projects-container">
-        <div class="upcoming-project-card">
-          <h3>Career Guidance AI</h3>
-          <p>An AI-powered web app to provide personalized career guidance based on skill assessment and data-driven insights.</p>
-          <p>Launch Date: Coming Soon</p>
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>HTML5</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>CSS3</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>JavaScript</span>
+              <span>60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Figma</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="social-links">
-        <h3>Contact Me!</h3>
-        <a href="https://www.linkedin.com/in/dhanush-d-prabhu-4b3b2132a/" class="social-icon" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/dhanushdprabhu18" class="social-icon" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/dhanushdprabhu18/" class="social-icon" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <section id="upcoming-projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Upcoming Projects</h2>
+        <div class="upcoming-projects-container">
+          <div class="upcoming-project-card">
+            <div class="upcoming-project-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>Ecommerce Platform</h3>
+            <p>Full-featured online store with product management and payment integration.</p>
+            <div class="project-status">
+              <div class="status-bar">
+                <div class="status-progress" style="width: 30%"></div>
+              </div>
+              <span>In Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <p>Feel free to reach out for collaborations or just to say hello!</p>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>dhanushdprabhu18@gmail.com</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/dhanush-d-prabhu-4b3b2132a/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/dhanushdprabhu18" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/dhanushdprabhu18/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <footer class="section">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Dhanush D Prabhu. All rights reserved.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    // Current year for footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Simple typing effect
+    const typingElement = document.querySelector('.typing-effect');
+    if (typingElement) {
+      const text = typingElement.textContent;
+      typingElement.textContent = '';
+      
+      let i = 0;
+      const typing = setInterval(() => {
+        if (i < text.length) {
+          typingElement.textContent += text.charAt(i);
+          i++;
+        } else {
+          clearInterval(typing);
+        }
+      }, 100);
+    }
+  </script>
 </body>
 </html>
