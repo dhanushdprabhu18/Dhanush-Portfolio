@@ -707,85 +707,79 @@ header.scrolled {
     }
 
  /* ====== Certification Section ====== */
- .certifications-section {
-  max-width: 960px;
-  margin: 4rem auto;
-  padding: 0 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-}
-
-.certifications-section h2 {
+ .certificates-section {
+  padding: 4rem 2rem;
+  background-color: #fafafa;
   text-align: center;
-  font-weight: 700;
+}
+
+.section-title {
   font-size: 2.5rem;
-  margin-bottom: 3rem;
-  letter-spacing: 1.2px;
-  color: var(--primary);
+  margin-bottom: 2rem;
+  color: #222;
+  font-weight: 700;
 }
 
-.certifications-grid {
+.certificates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.cert-card {
+.certificate-card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cert-card:hover {
+.certificate-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.cert-card img {
+.certificate-card img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
   display: block;
-  border-bottom: 1px solid #eee;
+  object-fit: cover;
+  max-height: 180px;
 }
 
-.cert-info {
-  padding: 1.2rem 1.5rem;
+.certificate-info {
+  padding: 1rem 1.5rem 2rem;
+  text-align: left;
 }
 
-.cert-info h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.4rem;
+.certificate-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: #1a73e8; /* primary blue */
   font-weight: 600;
-  color: #111;
 }
 
-.cert-info p {
+.certificate-info p {
   font-size: 1rem;
   color: #555;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
-/* Responsive tweaks for smaller screens */
-@media (max-width: 480px) {
-  .certifications-section {
-    margin: 2rem 1rem;
-  }
-  .certifications-section h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  .cert-info h3 {
-    font-size: 1.1rem;
-  }
-  .cert-info p {
-    font-size: 0.9rem;
-  }
+.certificate-info a {
+  font-weight: 600;
+  color: #1a73e8;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
 }
+
+.certificate-info a:hover,
+.certificate-info a:focus {
+  border-color: #1a73e8;
+}
+
 
     /* ====== Research Section ====== */
     .research-item {
@@ -1444,24 +1438,26 @@ header.scrolled {
     </div>
   </section>
 
-  <section class="certifications-section">
-    <h2>Certifications</h2>
-    <div class="certifications-grid">
-      <div class="cert-card">
-        <img src="/dhanush.jpeg" alt="Certificate 1" />
-        <div class="cert-info">
-          <h3>Machine Learning Specialization</h3>
-          <p>Coursera - In Progress</p>
+  <section id="certificates" class="certificates-section">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <img src="/certificate1.png" alt="Certificate 1 Name" />
+        <div class="certificate-info">
+          <h3>Certificate Title 1</h3>
+          <p>Issued by Organization Name</p>
+          <a href="/certificate1.png" target="_blank" rel="noopener">View Certificate</a>
         </div>
       </div>
-      <div class="cert-card">
-        <img src="certificate2.jpg" alt="Certificate 2" />
-        <div class="cert-info">
-          <h3>Deep Learning AI</h3>
-          <p>Coursera - Completed 2024</p>
+      <div class="certificate-card">
+        <img src="path/to/certificate2.jpg" alt="Certificate 2 Name" />
+        <div class="certificate-info">
+          <h3>Certificate Title 2</h3>
+          <p>Issued by Organization Name</p>
+          <a href="certificate2-link.pdf" target="_blank" rel="noopener">View Certificate</a>
         </div>
       </div>
-      <!-- Add more cert-cards as needed -->
+      <!-- Add more certificate cards here -->
     </div>
   </section>
   
