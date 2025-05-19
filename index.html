@@ -708,104 +708,84 @@ header.scrolled {
 
  /* ====== Certification Section ====== */
  .certifications-section {
-  max-width: 900px;
-  margin: 3rem auto;
+  max-width: 960px;
+  margin: 4rem auto;
   padding: 0 1rem;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
 }
 
 .certifications-section h2 {
   text-align: center;
-  margin-bottom: 2rem;
-  color: #222;
-  font-size: 2rem;
   font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  letter-spacing: 1.2px;
+  color: var(--primary);
 }
 
-.certifications-container {
-  display: flex;
-  flex-wrap: wrap;
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  justify-content: center;
 }
 
-.certification-item {
+.cert-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-  width: 320px;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
 }
 
-.certification-item:hover {
-  box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
 
-.certification-img {
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  flex-shrink: 0;
+.cert-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
 }
 
-.certification-info h3 {
-  margin: 0 0 0.5rem 0;
+.cert-info {
+  padding: 1.2rem 1.5rem;
+}
+
+.cert-info h3 {
   font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
   color: #111;
 }
 
-.certification-info p {
-  margin: 0;
-  color: #555;
+.cert-info p {
   font-size: 1rem;
+  color: #555;
+  margin: 0;
 }
 
-/* Responsive for smaller screens */
-@media (max-width: 600px) {
-  .certifications-container {
-    flex-direction: column;
-    align-items: center;
+/* Responsive tweaks for smaller screens */
+@media (max-width: 480px) {
+  .certifications-section {
+    margin: 2rem 1rem;
   }
-
-  .certification-item {
-    width: 90%;
-    max-width: 380px;
+  .certifications-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
-
-  .certification-img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .certification-info h3 {
+  .cert-info h3 {
     font-size: 1.1rem;
   }
-
-  .certification-info p {
-    font-size: 0.95rem;
+  .cert-info p {
+    font-size: 0.9rem;
   }
 }
-
-
-/* Responsive */
-@media (max-width: 600px) {
-  .certifications-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .certification-item {
-    width: 100%;
-    max-width: 350px;
-  }
-}
-
 
     /* ====== Research Section ====== */
     .research-item {
@@ -1466,24 +1446,25 @@ header.scrolled {
 
   <section class="certifications-section">
     <h2>Certifications</h2>
-    <div class="certifications-container">
-      <div class="certification-item">
-        <img src="certificate1.jpg" alt="Certificate 1" class="certification-img" />
-        <div class="certification-info">
+    <div class="certifications-grid">
+      <div class="cert-card">
+        <img src="/dhanush.jpeg" alt="Certificate 1" />
+        <div class="cert-info">
           <h3>Machine Learning Specialization</h3>
-          <p>Coursera — In Progress</p>
+          <p>Coursera - In Progress</p>
         </div>
       </div>
-  
-      <div class="certification-item">
-        <img src="certificate2.jpg" alt="Certificate 2" class="certification-img" />
-        <div class="certification-info">
+      <div class="cert-card">
+        <img src="certificate2.jpg" alt="Certificate 2" />
+        <div class="cert-info">
           <h3>Deep Learning AI</h3>
-          <p>Coursera — Completed 2024</p>
+          <p>Coursera - Completed 2024</p>
         </div>
       </div>
+      <!-- Add more cert-cards as needed -->
     </div>
   </section>
+  
   
   
   
